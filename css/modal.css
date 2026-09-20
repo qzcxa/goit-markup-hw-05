@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
 
   opacity: 0;
   pointer-events: none; /*ігнорування події миші*/
@@ -18,6 +19,7 @@
 .backdrop.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 .modal {
   position: absolute;
@@ -72,6 +74,7 @@
   color: #fff;
 }
 .modal-btn-icon {
+  color: #422e2e;
 }
 .modal-text {
   letter-spacing: 0.02em;
@@ -84,7 +87,7 @@
 }
 .modal-form-fields {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   color: rgba(17, 17, 17, 0.7);
 }
 .form-label {
@@ -93,6 +96,7 @@
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 .modal-form-wrapper {
   position: relative;
@@ -103,7 +107,7 @@
   padding: 11px 38px;
   outline: transparent;
 
-  border: 1px solid rgba(66, 46, 46, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   max-width: 360px;
   min-height: 40px;
@@ -138,6 +142,9 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   resize: none;
   outline: transparent;
 
@@ -160,11 +167,9 @@
   margin-bottom: 24px;
 }
 .modal-text-policy {
-  font-weight: 321px;
+  font-weight: 400px;
   font-size: 12px;
-  line-height: 1.17;
   color: #8e8f99;
-
 }
 .modal-form-policy {
 }
@@ -174,11 +179,11 @@
   align-items: center;
 
   border-radius: 2px;
-  border: 0.88px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
 
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-right: 8px;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -196,10 +201,9 @@
   outline-offset: 4px;
 }
 .modal-ill-checkbox {
-  color: #fff;
+  color: #f4f4fd;
   opacity: 0;
 
-  
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: opacity;
 }
@@ -212,7 +216,7 @@
 }
 
 .modal-link-policy {
-  line-height: 1.33;
+  line-height: 1.17;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
@@ -224,4 +228,7 @@
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
+}
+.modal-form-fields:last-of-type {
+  margin-bottom: 16px;
 }
