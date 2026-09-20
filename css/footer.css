@@ -80,6 +80,7 @@
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+  font-weight: 500;
 }
 .footer-form {
   display: flex;
@@ -91,6 +92,10 @@
   padding: 8px 16px;
   width: 264px;
   height: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 
   color: #fff;
 
